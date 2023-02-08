@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Flexbox Demo</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" class="card">
+        <div><h1>Profile Form</h1></div>
+        <div>
+          <label for="firstname">FirstName:</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstName"
+            placeholder="Your first name..."
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname">lastName:</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastName"
+            placeholder="Your last name..."
+            required
+          />
+        </div>
+
+        <div class="gender">
+          <div>
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" checked />
+          </div>
+          <div>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" />
+          </div>
+          <div>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" />
+          </div>
+        </div>
+        <div></div>
+
+        <div>
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Please choose an option--</option>
+            <option value="australia">Australia</option>
+            <option value="china">China</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+          </select>
+        </div>
+        <div>
+          <label for="birthday">Birthday:</label>
+          <input type="datetime-local" id="birthday" name="birthday" required />
+        </div>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            pattern=".+@gmail\.com"
+            size="30"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="website">Personal&nbsp;Website:</label>
+          <input
+            type="url"
+            id="website"
+            name="url"
+            placeholder="https://example.com..."
+            pattern="https://.*"
+            size="30"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="profilePhoto">Profile&nbsp;Photo:</label>
+          <input
+            type="url"
+            id="profilePhoto"
+            name="url"
+            placeholder="https://example.com..."
+            pattern="https://.*"
+            size="30"
+            required
+          />
+        </div>
+
+        <div>
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
